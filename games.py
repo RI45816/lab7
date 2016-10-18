@@ -21,6 +21,7 @@ def main():
     games = ["Twister", "Dodgeball", "Capture the Flag","Hide and Seek", "Croquet", "Ring Toss", "Ping Pong"] # The games the user shall choose from
     for i in range(len(games)):
         print(i+1,"-",games[i])
+    print("")
     votes = [0]*len(games) # Store the nber of votes each activity gets
     vote = int(input("What game would you like to play? (0 to quit): ")) # Ask the user for their vote
     while vote != 0: # As long as the user doesn't enter the sentinel
@@ -29,6 +30,7 @@ def main():
             votes[vote-1]+=1 # Count the vote
         vote = int(input("What game would you like to play? (0 to quit): ")) # Ask the user for their vote
             
+    print("")
     for i in range(len(games)):
         print(games[i],"has",votes[i],"votes")
     MOST_VOTED = [games[i] for i in maximum(*votes)] # The games that got the most votes
