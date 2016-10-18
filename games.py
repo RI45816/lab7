@@ -34,6 +34,6 @@ def main():
     for i in range(len(games)):
         print(games[i],"has",votes[i],"votes")
     MOST_VOTED = [games[i] for i in maximum(*votes)] # The games that got the most votes
-    print("After tallying up the votes, it seems that","%s%s%s" % (", ".join(MOST_VOTED[:-1]),", and " if len(MOST_VOTED) > 1 else "",MOST_VOTED[-1]),"got the most votes")
+    print("\nAfter tallying up the votes, it seems that","%s%s%s" % (", ".join(MOST_VOTED[:-1]),", and " if len(MOST_VOTED) > 1 else "",MOST_VOTED[-1]),"got the most votes")
 main()
 
