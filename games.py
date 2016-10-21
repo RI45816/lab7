@@ -1,9 +1,9 @@
-# File: milesPerWeek.py 
+# File: games.py
 # Author: Uzoma Uwanamodo 
 # Date: 10/18/2016
 # Section: 05
 # E-mail: uu3@umbc.edu
-# Description: Calculate how many miles per week the user drives in highest week
+# Description: Allow users to vote from a list of pre-defined games
 # Collaboration: During lab, collaboration between students is allowed, although I understand I still must understand the material and complete the assignment myself.
 
 def maximum(*n): # Get the activity with the highest number of votes
